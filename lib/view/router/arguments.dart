@@ -1,7 +1,5 @@
-class Arguments {
-  final String? id;
+part of 'app_router.dart';
 
-  Arguments({
-    this.id,
-  });
+class Arguments {
+  //TODO: added later
 }

@@ -1,6 +1,6 @@
 {
-    "name": "app",
-    "short_name": "app",
+    "name": "petrol_website",
+    "short_name": "petrol_website",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
