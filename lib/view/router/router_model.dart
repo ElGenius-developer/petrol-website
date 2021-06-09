@@ -1,8 +1,8 @@
 part of 'app_router.dart';
 
 class RoutersModel {
-  final String? route;
+  final String? name;
   final Widget? page;
     RoutersModel(
-      { required this.page, required this.route});
+      { required this.page,this.name,});
 }

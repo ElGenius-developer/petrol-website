@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:petrol_website/view/pages/error_page/error_page.dart';
 import 'package:petrol_website/view/router/app_router.dart';
+import 'package:petrol_website/view/router/navigation_history/generic_navigation_stack.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,11 +16,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      onGenerateRoute: AppRouter.onGenerateRoute,
-      // initialRoute: initialRoute.route,
+      navigatorObservers: [CustomNavigationObserver()],
       navigatorKey: NavigationServices.navigationKey,
-      navigatorObservers: [],
+      onGenerateRoute: AppRouter.onGenerateRoute,
+      onUnknownRoute: (settings) => MaterialPageRoute(
+        builder: (context) => ErrorPage(),
+      ),
+      initialRoute: HomeRoute,
+      // builder: (context, child) => LayoutTemplate(child!),
+
       // navigatorObservers,
-     );
+    );
   }
 }

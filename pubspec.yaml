@@ -27,23 +27,31 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.3
+  auto_size_text: ^3.0.0-nullsafety.0
+  auto_size_text_field: ^1.0.0-nullsafety.1
+  carousel_slider: ^4.0.0-nullsafety.0
+  expandable: ^5.0.1
+  dots_indicator: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+###########################################################################
+###################### GitHub Packages ####################################
+###########################################################################
 
-# The following section is specific to Flutter.
+# responsive_builder:
+  responsive_ui_builder:
+    git:
+      url:
+        https://github.com/ElGenius-developer/responsive_ui_builder.git
+
+
 flutter:
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
-
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
@@ -62,13 +70,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
+  fonts:
+    - family: MicroTechnic
+      fonts:
+        - asset: 'assets/fonts/MicroTechnicExtendedBold.ttf'
+    - family: cambria
+      fonts:
+        - asset: 'assets/fonts/Cambria_Font_For_Windows.ttf'
+    #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf

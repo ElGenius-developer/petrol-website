@@ -1,12 +1,7 @@
 part of 'app_router.dart';
 
-  RoutersModel initialRoute = RoutersModel(
-    page: InitialPage(),
-    route: '/');
+const String InitialRoute = '/';
+const String HomeRoute = 'home';
+const String DetailsRoute = 'details';
+const String ErrorRoute = 'Error';
 
-  RoutersModel homeRoute = RoutersModel(
-    page: Home(),
-    route: '/home');
-  RoutersModel detailsRoute = RoutersModel(
-    page: DetailsPage(),
-    route: '/details');
