@@ -12,12 +12,12 @@ class LayoutTemplate extends StatefulWidget {
 }
 
 class _LayoutTemplateState extends State<LayoutTemplate> {
- var services ='',qhse='' , hr ='', carrers ='';
+  var services = '', qhse = '', hr = '', carrers = '';
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, deviceInfo) {
+      print('inital');
       return Scaffold(
-
         body: Column(
           children: [
             Container(
@@ -30,11 +30,13 @@ class _LayoutTemplateState extends State<LayoutTemplate> {
                       padding: EdgeInsets.symmetric(horizontal: 15),
                       child: CustomText(
                         isNormal: false,
-                        text: 'Home',textColor: Colors.red,fontWeight: FontWeight.bold,),
-
+                        text: 'Home',
+                        textColor: Colors.red,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
-                 ],
+                ],
               ),
             ),
             Expanded(child: widget.child),
@@ -43,6 +45,4 @@ class _LayoutTemplateState extends State<LayoutTemplate> {
       );
     });
   }
-
-
 }
