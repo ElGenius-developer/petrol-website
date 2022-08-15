@@ -1,1 +1,5 @@
-![](https://github.com/ElGenius-developer/petrol-website/blob/main/petrolium1.PNG)
+![](https://github.com/ElGenius-developer/petrol-website/blob/main/petrolium1.PNG),
+![](https://github.com/ElGenius-developer/petrol-website/blob/main/petrolium2.PNG),
+![](https://github.com/ElGenius-developer/petrol-website/blob/main/petrolium3.PNG),
+![](https://github.com/ElGenius-developer/petrol-website/blob/main/petrolium4.PNG),
+![](https://github.com/ElGenius-developer/petrol-website/blob/main/petrolium5.PNG),
